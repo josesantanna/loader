@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=egde">
+	<title>Spinner loader - Css puro</title>
+</head>
+<style>
+	/*centralizar*/ /* css */
+	body {
+		background: #dff9fb;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+	/* centralizar*/
+	}
+/* css*/
+	.spinner {
+		border: 1px solid rgba(0,0,0, .1);
+		border-left-color: #22a6b3;
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+	}
+
+	@keyframes spin {
+		to { transform: rotate(360deg); }
+	}
+/* css*/
+</style>
+<body>
+	<div class="spinner"></div>
+</body>
+</html>
